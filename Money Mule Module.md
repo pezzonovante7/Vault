@@ -26,3 +26,10 @@
 
 - PAN number not getting populated all the time.
 	- populated for ticket ID -  2292
+
+- when the finacle API returns data it is returning both 22 char tran ID and 16 char tran ID
+- SAMPLE FORMAT - KLGBN52026010536344510,KLGBH26005366982
+- need to add a new row in the popup grid to show both 22 char tran ID and 16 char tran ID
+- even in the data grid with header
+	|Head|Status|Tran Date|Tran ID|Tran Amount|More Info|
+	the transactionID should be shown in separate lines in the same cell (no additional row needed)

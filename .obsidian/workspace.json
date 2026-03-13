@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2c16abd3576c26ef",
+        "id": "f254f3c8b08d6bc2",
         "type": "tabs",
         "children": [
           {
-            "id": "d0cd96ce3344fee6",
+            "id": "e5c09c6ed841dbd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -164,6 +164,16 @@
               "icon": "lucide-list",
               "title": "Outline of Money Mule Module"
             }
+          },
+          {
+            "id": "f4d56b54609e31ef",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
         "currentTab": 4
@@ -185,13 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d0cd96ce3344fee6",
+  "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
-    "IRDAI Prep Notes.md",
-    "Users.md",
+    "LMS - MSME Additional Details and Report.md",
     "Money Mule Module.md",
     "Work.md",
-    "LMS - MSME Additional Details and Report.md",
+    "Users.md",
+    "IRDAI Prep Notes.md",
     "GITHUB Testing.md",
     "Fight Club.md",
     "Untitled.base",

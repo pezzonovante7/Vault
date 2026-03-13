@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LMS - MSME Additional Details and Report.md",
+                "file": "Money Mule Module.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LMS - MSME Additional Details and Report"
+              "title": "Money Mule Module"
             }
           }
         ]
@@ -156,31 +156,22 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IRDAI Prep Notes.md",
+                "file": "Money Mule Module.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IRDAI Prep Notes"
-            }
-          },
-          {
-            "id": "12fbe16ecd990c5f",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of Money Mule Module"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,13 +187,13 @@
   },
   "active": "d0cd96ce3344fee6",
   "lastOpenFiles": [
-    "Money Mule Module.md",
+    "IRDAI Prep Notes.md",
     "Users.md",
+    "Money Mule Module.md",
     "Work.md",
+    "LMS - MSME Additional Details and Report.md",
     "GITHUB Testing.md",
     "Fight Club.md",
-    "IRDAI Prep Notes.md",
-    "LMS - MSME Additional Details and Report.md",
     "Untitled.base",
     "Untitled.canvas",
     "Fetch Incident Transactions.md",

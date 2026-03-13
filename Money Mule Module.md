@@ -26,6 +26,3 @@
 
 - PAN number not getting populated all the time.
 	- populated for ticket ID -  2292
-   
-for RTGS - KLGBR5 YYYYMMDD00XXXXXXXX
-For NEFT - KLGBN5 YYYYMMDD00XXXXXXXX

@@ -36,3 +36,6 @@
 - even in the data grid with header
 	|Head|Status|Tran Date|Tran ID|Tran Amount|More Info|
 	the transactionID should be shown in separate lines in the same cell (no additional row needed)
+
+- Display both 16 digit and 22 digit UTR Number for NEFT/RTGS transactions. for other transactions only a single field Transaction Id needs to be shown.
+- 

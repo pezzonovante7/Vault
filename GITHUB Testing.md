@@ -1,2 +1,0 @@
-- testing the obsidian git plugin
-- 

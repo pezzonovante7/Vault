@@ -18,26 +18,38 @@
 	- 
 
 - Queries to RMWNG
-	- Check with RM Wing, whether they are expecting the same value stored in MTT_POS_TRANSACTION_ID
-		- REMOVE PREFIX "POS"
-	- Get other options for MTE_CLOSE_REASON from RM Wing
+	- {Police Department Details} addition to lien marking remarks in Finacle
+	- 
 
 - Queries 
 	- should Lien Marked row be dropped when Freeze Account is enabled ???
 		- if yes, A new field MTE_FREEZE_REASON is also needed ???
 			- BOTH LIEN MARK AND FREEZE OPTIONS ARE NEEDED AS PER RMWNG
 
-- PAN number not getting populated all the time.
-	- populated for ticket ID -  2292
+- the output format for API 417 has been changed, the new fields added to the output needs to be populated to MTE_PHONE_NUMBER, MTE_PAN_NUMBER in MULE_TICKET_ENTRIES. make the changes accordingly. 
+- Sample output
 
-- when the finacle API returns data it is returning both 22 char tran ID and 16 char tran ID
-- SAMPLE FORMAT - KLGBN52026010536344510,KLGBH26005366982
-- need to add a new row in the popup grid to show both 22 char tran ID and 16 char tran ID
-- even in the data grid with header
-	|Head|Status|Tran Date|Tran ID|Tran Amount|More Info|
-	the transactionID should be shown in separate lines in the same cell (no additional row needed)
+                  "account_details": [
+                      {
+                        "account_number": "00000033082900137",
+                        "account_name": "ACCOUNT_NAME_PLACEHOLDER",
+                        "sol_id": "SOL036",
+                        "pan_no": "DDDDDDDDD",
+                        "mobile_no": "90909090909"
+                      },
+                      {
+                        "account_number": "00000033082900138",
+                        "account_name": "ACCOUNT_NAME_PLACEHOLDER",
+                        "sol_id": "SOL065",
+                        "pan_no": "DDDDDDDDD",
+                        "mobile_no": "90909090909"
+                      },
+                      {
+                        "account_number": null,
+                        "account_name": null,
+                        "sol_id": null,
+                        "pan_no": "DDDDDDDDD",
+                        "mobile_no": "90909090909"
+                      }
+                    ],
 
-- Display both 16 digit and 22 digit UTR Number for NEFT/RTGS transactions. for other transactions only a single field Transaction Id needs to be shown.
-
-
-- in 846 Explore Tickets @PROCEDURE ENGINE_LINK_BUTTON_846.sql, a new field with label Acknowledgement ID needs to be added. when the user enters the Acknowledgement ID, the other fields in the menu should be empty, add validations accordingly. when the user enters the acknowledgement ID and clicks SUBMIT, the corresponding ticket with MTM_ACKNOWLEDGEMENT_ID = <entered value> from MULE_TICKET_MASTER should be displayed in the datagrid. make the changes to the menu accordingly.

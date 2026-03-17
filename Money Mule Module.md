@@ -38,4 +38,6 @@
 	the transactionID should be shown in separate lines in the same cell (no additional row needed)
 
 - Display both 16 digit and 22 digit UTR Number for NEFT/RTGS transactions. for other transactions only a single field Transaction Id needs to be shown.
-- 
+
+
+- in 846 Explore Tickets @PROCEDURE ENGINE_LINK_BUTTON_846.sql, a new field with label Acknowledgement ID needs to be added. when the user enters the Acknowledgement ID, the other fields in the menu should be empty, add validations accordingly. when the user enters the acknowledgement ID and clicks SUBMIT, the corresponding ticket with MTM_ACKNOWLEDGEMENT_ID = <entered value> from MULE_TICKET_MASTER should be displayed in the datagrid. make the changes to the menu accordingly.

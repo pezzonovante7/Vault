@@ -25,3 +25,8 @@
         Check through Front End
         RM Wing to take up with PMO and block the SMS sending for the reason code
 	- details of duplicate lien marking in Finacle
+
+
+- the values Reported in Multiple :
+Transactions : x times
+Complaints : y times are optional. they maybe present or may not be present the details of the account for the transactions which do not have these values are being ignored by the current script. make the necessary changes to make sure the transaction details are captured and written in the output.txt file regardless of these lines in the data.txt

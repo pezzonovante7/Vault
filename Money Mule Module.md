@@ -19,6 +19,9 @@
 	- MULE_GET_EARLIER_INCIDENTS_EXIST
 	- 
 
+- RMWNG ip address
+	- 10.130.170.27
+
 - Queries to RMWNG
 	- {Police Department Details} addition to lien marking remarks in Finacle
 	- RM Wing should create new lien reason code in Finacle

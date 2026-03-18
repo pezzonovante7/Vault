@@ -19,7 +19,10 @@
 
 - Queries to RMWNG
 	- {Police Department Details} addition to lien marking remarks in Finacle
-	- 
+	- RM Wing should create new lien reason code in Finacle
+        Check through Front End
+        RM Wing to take up with PMO and block the SMS sending for the reason code
+        
 
 - Queries 
 	- should Lien Marked row be dropped when Freeze Account is enabled ???

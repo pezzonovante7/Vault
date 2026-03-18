@@ -16,33 +16,12 @@
 	-  
 	- ENGINE_LINK_BUTTON_846
 	- 
+	- MULE_GET_EARLIER_INCIDENTS_EXIST
+	- 
 
 - Queries to RMWNG
 	- {Police Department Details} addition to lien marking remarks in Finacle
 	- RM Wing should create new lien reason code in Finacle
         Check through Front End
         RM Wing to take up with PMO and block the SMS sending for the reason code
-
-Purpose
-
-        Add Police Department details to lien marking remarks in Finacle
-
-    Location
-        
-        @FUNCTION GET_API_419_XML.sql
-        FUNCTION GET_API_419_XML
-        Rmks element in AcctLienAdd and AcctLienMod XML
-
-    Current Format
-
-        CYBER CRIME NCRP_<Acknowledgement_ID>; Layer - <Layer>
-
-    New Format
-
-        CYBER CRIME NCRP_<Acknowledgement_ID>; Layer - <Layer>; <Police_Department>
-
-    Source of Police Department
-    
-MTM_REQUEST_DEPARTMENT from MULE_TICKET_MASTER 
-            and 
-            MTE_STATE from MULE_TICKET_ENTRIES
+	- details of duplicate lien marking in Finacle

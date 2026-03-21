@@ -29,6 +29,7 @@
         Check through Front End
         RM Wing to take up with PMO and block the SMS sending for the reason code
 	- details of duplicate lien marking in Finacle
+- New Bug Report - another field present as ALL
 
 - Unassign Specific
 - for @PROCEDURE ENGINE_LINK_BUTTON_846.sql- a new option needs to be added to the dropdown - Unassign Specific. when the option is selected, the Assigned To and Acknowledgement ID are mandatory. the details entered needs to validated and ticket should be in a pending status(MTM_UPDATE_DATE IS NULL) only then the ticket needs to be unassigned.

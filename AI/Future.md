@@ -1,0 +1,2 @@
+- primary human skill is **setting the right goals** rather than executing them.
+- 

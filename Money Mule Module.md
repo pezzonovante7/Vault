@@ -44,4 +44,6 @@
         Get examples from RM Wing and Implement
         Also see that after implementing, data is coming from Finacle during data fetch and ensure that it is correct
         If not rectify the same. Seek assistance from Binu
-	- 	
+
+- Change Request for @scrape.py
+	- there could be an additional value "ALL" after the Transaction ID and before Transaction Amount. this value needs to ignored and the program should work as is. 

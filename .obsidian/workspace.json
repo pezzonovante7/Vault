@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTM Module.md",
+                "file": "Money Mule Module.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OTM Module"
+              "title": "Money Mule Module"
             }
           }
         ]
@@ -197,8 +197,8 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
-    "Users.md",
     "OTM Module.md",
+    "Users.md",
     "Money Mule Module.md",
     "LMS - MSME Additional Details and Report.md",
     "Work.md",

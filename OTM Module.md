@@ -1,3 +1,6 @@
 - Users
 	- JOBI4431
-	- PRAV6320
+	- 
+
+
+- lock operation is only permitted for verified records. unverified records cannot be locked.

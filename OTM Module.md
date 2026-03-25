@@ -1,57 +1,64 @@
 
-create a new Menu 1004 - Whitelisting of Accounts 
-
-under inspection module - /Routines/Inspection/
-
-design is provided in the attached image 
-
-Purpose
-
-        Whitelisting of accounts, OTM Report ID wise for excluding the accounts from OTM Listing
-
-User Access
-
-        Branchs users only
-        Maker and checker should be different
-        Checker should be Branch Manager
-
-    Workflow
-
-        Add Mode
+- Add Mode
 
             Capture Account Number and OTM Report ID
             Ensure that atleast an entry exist for the account in the otm master table against the login user solid
             Should not allow if a record already exists for the account and report id where valid upto date is >= current date
 
-        Other Modes
 
-            Account Number and OTM Report ID are display fields, with OTM Report name displayed
-
-        Justification and valid upto is mandatory
-
-            Valid upto - Should permit a maximum of 3 months
-
-        Lock option should be provided, if the current date is <= valid upto date
-
-    Table
-
-        OTM_WHITELIST_MASTER
-
-DROP TABLE IF EXISTS OTM_WHITELIST_MASTER;
-    CREATE TABLE OTM_WHITELIST_MASTER
+    DROP TABLE IF EXISTS OTM_MASTER;
+    CREATE TABLE OTM_MASTER
     (
-        OWM_WHITELIST_ID                             INT,
-        OWM_CREATE_DATE                              DATE,
-        OWM_LOCK_DATE                                DATE,
-        OWM_CREATE_SOLID                             VARCHAR(8),
-        OWM_ACCOUNT_NUMBER                           VARCHAR(20),
-        OWM_OTM_REPORT_ID                            VARCHAR(20),
-        OWM_JUSTIFICATION                            VARCHAR(500),
-        OWM_VALID_UPTO                               DATE,
-        OWM_RECORD_STATUS                            INT,
-        OWM_UUSER                                    VARCHAR(15),
-        OWM_UDATE                                    DATETIME
+        OM_OTM_ID                                       INT,
+        OM_OTM_DATE                                     DATE,
+        OM_SOLID                                        VARCHAR(8),
+        OM_REPORT_ID                                    INT,
+        OM_ACCOUNT_NO                                   VARCHAR(20),
+
+        OM_LYING_AT                                     VARCHAR(8),
+        OM_LYING_SINCE                                  DATE,
+
+        OM_LAST_ACTION_SOLID                            VARCHAR(8),
+        OM_LAST_ACTION                                  VARCHAR(5),
+        OM_LAST_ACTION_RECORD_STATUS                    INT,
+        OM_LAST_ACTION_DATE                             DATE,
+
+        OM_OTM_STATUS                                   VARCHAR(5),
+        OM_CLOSE_DATE                                   DATE,
+        OM_IS_ANNEXURE2_SUBMITTED                       VARCHAR(2),
+
+        OM_RECORD_STATUS                                INT,
+        OM_UUSER                                        VARCHAR(15),
+        OM_UDATE                                        DATETIME
     );
-    CREATE INDEX OTM_WHITELIST_MASTER_IDX1 ON OTM_WHITELIST_MASTER (OWM_WHITELIST_ID);
-    CREATE INDEX OTM_WHITELIST_MASTER_IDX2 ON OTM_WHITELIST_MASTER (OWM_CREATE_SOLID);
-    CREATE INDEX OTM_WHITELIST_MASTER_IDX3 ON OTM_WHITELIST_MASTER (OWM_ACCOUNT_NUMBER,OWM_OTM_REPORT_ID);
+    CREATE INDEX OTM_MASTER_IDX1 ON OTM_MASTER (OM_OTM_ID);
+    CREATE INDEX OTM_MASTER_IDX2 ON OTM_MASTER (OM_SOLID,OM_OTM_DATE);
+    CREATE INDEX OTM_MASTER_IDX3 ON OTM_MASTER (OM_LYING_AT,OM_OTM_STATUS);
+    CREATE INDEX OTM_MASTER_IDX4 ON OTM_MASTER (OM_ACCOUNT_NO);
+
+    <!-- OM_IS_ANNEXURE2_SUBMITTED -->
+    <!-- Y - Yes -->
+    <!-- N - No -->
+    <!-- NULL or NA - Not Applicable -->
+
+    -- OM_OTM_STATUS Pickup
+    -- Default: BUA (Branch Unattended) with OM_CLOSE_DATE = NULL
+    DELETE FROM PARAM_PICKUP_ALPHA WHERE PICKUP_CODE = 'OM_OTM_STATUS';
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', '0', 'OTM Record Status', 51, 'Y', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'BUA', 'Branch Unattended', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'BIN', 'Branch Initiated', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'BRE', 'Returned to Branch', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'RUA', 'Regional Office Unattended', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'RIN', 'Regional Office Initiated', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'RRE', 'Returned to Regional Office', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'SUA', 'Section Unattended', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'SIN', 'Section Initiated', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OM_OTM_STATUS', 'CLS', 'Closed', 51, 'N', 'SYSTEM');
+    COMMIT;
+
+    DELETE FROM PARAM_PICKUP_ALPHA WHERE PICKUP_CODE = 'OTM_RISK_CATEGORY';
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OTM_RISK_CATEGORY', '0', 'OTM RISK CATEGORY', 51, 'Y', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OTM_RISK_CATEGORY', '1', 'High', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OTM_RISK_CATEGORY', '2', 'Medium', 51, 'N', 'SYSTEM');
+    INSERT INTO PARAM_PICKUP_ALPHA VALUES ('OTM_RISK_CATEGORY', '3', 'Low', 51, 'N', 'SYSTEM');
+    COMMIT;

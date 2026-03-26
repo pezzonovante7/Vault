@@ -58,4 +58,10 @@
 	- ENGINE_LINK_BUTTON_846
 	- ENGINE_LINK_BUTTON_835
 	- ALTER TABLE MULE_TICKET_ENTRIES ADD COLUMN MTE_NO_OF_COMPLAINTS INT;
-	- 
+
+
+- negative lien marking
+	- Layer-1
+	- Remark in HALM menu in CBS
+		- NEGATIVELIEN -L1 (NCRP Ack No.) (LEA)
+		- Lien Reason Code 011

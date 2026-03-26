@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTM Module.md",
+                "file": "Fight Club.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OTM Module"
+              "title": "Fight Club"
             }
           }
         ]
@@ -197,14 +197,14 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
-    "Money Mule Module.md",
-    "OTM Module.md",
-    "Users.md",
     "LMS - MSME Additional Details and Report.md",
-    "Work.md",
-    "AI/Future.md",
-    "AI",
     "Fight Club.md",
+    "AI/Future.md",
+    "OTM Module.md",
+    "Money Mule Module.md",
+    "Users.md",
+    "Work.md",
+    "AI",
     "IRDAI Prep Notes.md",
     "GITHUB Testing.md",
     "Untitled.base",

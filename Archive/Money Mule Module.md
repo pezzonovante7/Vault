@@ -41,15 +41,6 @@
 
 - the number of complaints is currently not being stored in the DB. the number of complaints is part of the input string provided for parsing. it appears just before the transaction ID with delimited ~ separating them. the number of complaints for each entry needs to be captured and stored in MTE_NO_OF_COMPLAINTS in MULE_TICKET_ENTRIES. I made some changes but it is still not working. can you fix this issue.
 
-
-- Pending
-	- Enhancement 1
-
-        Support for debit transaction
-        Get examples from RM Wing and Implement
-        Also see that after implementing, data is coming from Finacle during data fetch and ensure that it is correct
-        If not rectify the same. Seek assistance from Binu
-
 - 3 bugs fix
 	- 20260317122922
 	- 20260317123131

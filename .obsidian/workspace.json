@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IRDAI Prep Notes.md",
+                "file": "DEC INVNT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IRDAI Prep Notes"
+              "title": "DEC INVNT"
             }
           }
         ]
@@ -197,11 +197,12 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
+    "IRDAI Prep Notes.md",
+    "DEC INVNT.md",
     "Harari.md",
     "Work.md",
     "TEST SCENARIOS - ENGINE_LINK_BUTTON_998.md",
     "Users.md",
-    "IRDAI Prep Notes.md",
     "OTM Module.md",
     "Untitled 1.base",
     "Untitled.base",

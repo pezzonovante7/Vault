@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEST SCENARIOS - ENGINE_LINK_BUTTON_998.md",
+                "file": "Think.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TEST SCENARIOS - ENGINE_LINK_BUTTON_998"
+              "title": "Think"
             }
           }
         ]
@@ -197,8 +197,9 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
-    "Users.md",
     "TEST SCENARIOS - ENGINE_LINK_BUTTON_998.md",
+    "Think.md",
+    "Users.md",
     "Archive/Maruti Portal Integration Observations.md",
     "Archive/Money Mule Module.md",
     "Archive/LMS - MSME Additional Details and Report.md",

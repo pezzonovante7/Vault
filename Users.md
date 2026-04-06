@@ -9,7 +9,7 @@
 			- ANAN6964
 		- 40533
 			- SAND5370
-				- NIJI5480
+			- NIJI5480
 - ROPTA
 	- Branches
 		- 40336

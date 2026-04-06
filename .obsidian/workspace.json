@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTM Module.md",
+                "file": "Users.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OTM Module"
+              "title": "Users"
             }
           }
         ]
@@ -197,12 +197,13 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
+    "Archive/Maruti Portal Integration Observations.md",
+    "Archive/Money Mule Module.md",
+    "Archive/LMS - MSME Additional Details and Report.md",
+    "OTM Module.md",
     "IRDAI Prep Notes.md",
     "Work.md",
     "Users.md",
-    "Archive/LMS - MSME Additional Details and Report.md",
-    "OTM Module.md",
-    "Archive/Money Mule Module.md",
     "Fight Club.md",
     "AI/Future.md",
     "AI",
@@ -211,7 +212,6 @@
     "Untitled.canvas",
     "Fetch Incident Transactions.md",
     "Archive/Testing Maruti Portal Integration.md",
-    "Archive/Maruti Portal Integration Observations.md",
     "Archive",
     "2026-03-05.md",
     "mermaid-diagram-1.png",

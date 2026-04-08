@@ -1,14 +1,7 @@
-Implement a copy of Menu 998 in PGRS Module
-the dropdown options should be
-CPA        │ Unattended customer complaint│ 
-DTS        │ KGB Tatkal Loan account│
-CTA        | CIBIL Trigger Actions |  
-    covering both
-	CTAUR      │ Unverified records in CIBIL Trigger Actions │ 
-	CTDEC      │ Pending Action in CIBIL Trigger requests    │       
-
-for DTS, CTA CRWNG is authorised
-for CPA PDWNG is authorised
-ITWNG is as usual
-
-DAY_END_CHECK_PGRS should be modified to use DAY_END_CHECK_EXEMPT_NEW instead
+there is a menu with shortcut PP in every module
+NEED TO CREATE LINK TO DAY END CHECK EXEMPT IN ALL THE MODULES
+PP contains links to other menus
+need to create a new section for day end check exemption in PP menu in all the modules
+when the link is clicked should be redirected to 998
+do not display the section to unauthorised users
+if PP is absent in a module create the PP

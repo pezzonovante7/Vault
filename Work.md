@@ -1,1 +1,4 @@
 - [ ] Day End Check Exemption
+	- [ ] inventory module - 4210 report for exempt day end check report
+		- [ ] needs to modified for the new tabl
+	- [ ] 

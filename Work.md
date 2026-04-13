@@ -17,4 +17,6 @@
 	- DEC_BUILD_DATA
 	- DEC_BUILD_DATA_2
 	- DEC_VALIDATE_ENTRIES
-- 
+
+
+- LETTER module - same user SOLID EXEMPTION should not come for ITWNG

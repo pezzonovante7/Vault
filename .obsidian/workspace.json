@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Work.md",
+                "file": "AI/Future.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Work"
+              "title": "Future"
             }
           }
         ]
@@ -197,9 +197,9 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
-    "Claude/Configs.md",
     "Work.md",
     "פָּלַל.md",
+    "Claude/Configs.md",
     "Claude",
     "Untitled.md",
     "Obsidian/Untitled.md",

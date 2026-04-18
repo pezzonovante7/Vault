@@ -14,7 +14,7 @@
 		- the flow should go as follows - after a new task assignment, i will first provide you the design, you can fetch the design and summarize your understanding. if any edits i will do right then. after confirmation we can move to building the menu. once the menu is built inside out. we can then move to the text generation. all these processes should work independently so that it will flexible for any future changes.
 
 - 488 issue contact Binu Sir
-	- ```
+	- ```json
 	  	  Expected Response Format
 		  {
 		    "status": 1,
@@ -46,7 +46,3 @@
 		  }
 	  ```
 	  API 488 returns a response that is not valid JSON — "suitDetails" is emitted with no value
-
-
-- 1019
-when I open 1019 menu with CONTROL ID 1019*1040*U for the customer with ID 492145300 no details are present. when I click on the SUBMIT button, an error is showing up saying Networth @ Sanction for CUST1001 - Enter Value. this is very inconsistent. this is present for the other errors as well. can you fix this

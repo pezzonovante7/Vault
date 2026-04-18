@@ -48,7 +48,5 @@
 	  API 488 returns a response that is not valid JSON — "suitDetails" is emitted with no value
 
 
-- 1015
-	- the present position field is accepting an entry even with one characters. it is a general in the codebase that atleast 3 characters must be entered for a text field in order accept it. the maximum is constrained by the size of the variable in the DB.
-	- the error message shows "Validation Failed: Present Position is mandatory." when no value is entered in the Present Position field. it should simple show "Present Position is mandatory"
-	- If returned, Reason is mandatory when the OARD_REQUISITION_STATUS is RETURNED. currently it is not mandatory.
+- 1019
+when I open 1019 menu with CONTROL ID 1019*1040*U for the customer with ID 492145300 no details are present. when I click on the SUBMIT button, an error is showing up saying Networth @ Sanction for CUST1001 - Enter Value. this is very inconsistent. this is present for the other errors as well. can you fix this

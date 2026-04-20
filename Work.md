@@ -43,3 +43,8 @@
 		  }
 	  ```
 	  API 488 returns a response that is not valid JSON — "suitDetails" is emitted with no value
+
+- Question to Franklin Sir
+	- new param sequence for each EVENTID or a single global one
+	- pickups not defined for a lot of fields in Suit and a field in RR
+	- 

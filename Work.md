@@ -1,10 +1,7 @@
 - DEC Work
 	- SOLSET needs to be enabled for HO users
-	- SOLSET relevant to RO users needs to be enabled to AGM or CM in RO
+	- SOLSET relevant to RO users needs to be enabled to AGM / CM in RO
 	- SOLSET ALL needs to be enabled for Wing Heads
-
-- ADAMANT
-	- 1019
 
 - Claude Configs
 	- all read permissions allowed

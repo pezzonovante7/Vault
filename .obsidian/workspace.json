@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Future.md",
+                "file": "Work.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Future"
+              "title": "Work"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "e5c09c6ed841dbd6",
   "lastOpenFiles": [
+    "AI/Future.md",
     "Work.md",
     "פָּלַל.md",
     "Claude/Configs.md",
@@ -226,7 +227,6 @@
     "Untitled 1.md",
     "Untitled 2.md",
     "Think.md",
-    "AI/Future.md",
     "AI",
     "GITHUB Testing.md",
     "Untitled.canvas",

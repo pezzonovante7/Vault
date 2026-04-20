@@ -47,4 +47,6 @@
 - Question to Franklin Sir
 	- new param sequence for each EVENTID or a single global one
 	- pickups not defined for a lot of fields in Suit and a field in RR
+	- for account no 40267131000584 in Suit, suit details are empty but other are not
+		- ![[Pasted image 20260420163240.png]]
 	- 

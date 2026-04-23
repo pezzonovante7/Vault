@@ -53,4 +53,5 @@
 	- for account no 40267131000584 in Suit, suit details are empty but other are not
 		- ![[Pasted image 20260420163240.png]]
 	- same issue with account no - 40267131008850 (M)
-	- 
+
+- when SOLID ALL is selected while selecting module as ALL, the SUB DEPT row should appear. if the user selects some sub department X, all the DEC related that selected sub dept in all SOLIDs should be cleared. the SUB DEPT should only appear when the module is selected as Letters, it should not be visible for module ALL.

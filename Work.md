@@ -2,6 +2,9 @@
 	- SOLSET needs to be enabled for HO users
 	- SOLSET relevant to RO users needs to be enabled to AGM / CM in RO
 	- SOLSET ALL needs to be enabled for Wing Heads
+	- Letter
+		- Day end check report new - needs to be created
+		- 
 
 - Claude Configs
 	- all read permissions allowed

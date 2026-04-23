@@ -4,6 +4,7 @@
 	- SOLSET ALL needs to be enabled for Wing Heads
 	- Letter
 		- Day end check report new - needs to be created
+		- Sub Dept wise exemption, only for RO/HO
 
 - Claude Configs
 	- all read permissions allowed

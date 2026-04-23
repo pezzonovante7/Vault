@@ -5,6 +5,7 @@
 	- Letter
 		- Day end check report new - needs to be created
 		- Sub Dept wise exemption, only for RO/HO
+	- GMODEULE
 
 - Claude Configs
 	- all read permissions allowed
